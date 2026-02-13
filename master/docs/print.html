@@ -1326,8 +1326,8 @@ space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 <tr><td><code>:reflow</code></td><td>Hard-wrap the current selection of lines to a given width.</td></tr>
 <tr><td><code>:tree-sitter-subtree</code>, <code>:ts-subtree</code></td><td>Display the smallest tree-sitter subtree that spans the primary selection, primarily for debugging queries.</td></tr>
 <tr><td><code>:config-reload</code></td><td>Refresh user config.</td></tr>
-<tr><td><code>:config-open</code></td><td>Open the user config.toml file.</td></tr>
-<tr><td><code>:config-open-workspace</code></td><td>Open the workspace config.toml file.</td></tr>
+<tr><td><code>:config-open</code></td><td>Open the user init.lua config file.</td></tr>
+<tr><td><code>:config-open-workspace</code></td><td>Open the workspace init.lua config file.</td></tr>
 <tr><td><code>:log-open</code></td><td>Open the silicon log file.</td></tr>
 <tr><td><code>:insert-output</code></td><td>Run shell command, inserting output before each selection.</td></tr>
 <tr><td><code>:append-output</code></td><td>Run shell command, appending output after each selection.</td></tr>
@@ -1343,6 +1343,11 @@ space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 <tr><td><code>:yank-diagnostic</code></td><td>Yank diagnostic(s) under primary cursor to register, or clipboard by default</td></tr>
 <tr><td><code>:read</code>, <code>:r</code></td><td>Load a file into buffer</td></tr>
 <tr><td><code>:echo</code></td><td>Prints the given arguments to the statusline.</td></tr>
+<tr><td><code>:terminal</code>, <code>:term</code></td><td>Open the terminal panel.</td></tr>
+<tr><td><code>:terminal-new</code>, <code>:tnew</code></td><td>Open a new terminal tab.</td></tr>
+<tr><td><code>:terminal-close</code>, <code>:tclose</code></td><td>Close the active terminal tab.</td></tr>
+<tr><td><code>:terminal-next</code>, <code>:tnext-tab</code></td><td>Switch to the next terminal tab.</td></tr>
+<tr><td><code>:terminal-prev</code>, <code>:tprev-tab</code></td><td>Switch to the previous terminal tab.</td></tr>
 <tr><td><code>:noop</code></td><td>Does nothing.</td></tr>
 </tbody></table>
 </div>
@@ -1662,6 +1667,8 @@ space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 <tr><td><code>goto_prev_tabstop</code></td><td>Goto next snippet placeholder</td><td></td></tr>
 <tr><td><code>rotate_selections_first</code></td><td>Make the first selection your primary one</td><td></td></tr>
 <tr><td><code>rotate_selections_last</code></td><td>Make the last selection your primary one</td><td></td></tr>
+<tr><td><code>toggle_terminal_panel</code></td><td>Toggle terminal panel</td><td>normal: <code>&lt;space&gt;t</code>, select: <code>&lt;space&gt;t</code></td></tr>
+<tr><td><code>new_terminal_tab</code></td><td>Open new terminal tab</td><td>normal: <code>&lt;space&gt;T</code>, select: <code>&lt;space&gt;T</code></td></tr>
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h2 id="language-support"><a class="header" href="#language-support">Language Support</a></h2>
 <p>The following languages and Language Servers are supported. To use
