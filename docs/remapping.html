@@ -128,10 +128,10 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        <a href="https://github.com/Rani367/Silicon" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/silicon-editor/Silicon" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/Rani367/Silicon/edit/master/book/src/remapping.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/silicon-editor/Silicon/edit/master/book/src/remapping.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -169,12 +169,12 @@ available in the future).</p>
 <li>Static commands: commands like <code>move_char_right</code> which are usually bound to
 keys and used for movement and editing. A list of static commands is
 available in the <a href="./keymap.html">Keymap</a> documentation and in the source code
-in <a href="https://github.com/Rani367/Silicon/blob/master/silicon-term/src/commands.rs"><code>silicon-term/src/commands.rs</code></a>
+in <a href="https://github.com/silicon-editor/Silicon/blob/master/silicon-term/src/commands.rs"><code>silicon-term/src/commands.rs</code></a>
 at the invocation of <code>static_commands!</code> macro.</li>
 <li>Typable commands: commands that can be executed from command mode (<code>:</code>), for
 example <code>:write!</code>. See the <a href="./commands.html">Commands</a> documentation for a
 list of available typeable commands or the <code>TypableCommandList</code> declaration in
-the source code at <a href="https://github.com/Rani367/Silicon/blob/master/silicon-term/src/commands/typed.rs"><code>silicon-term/src/commands/typed.rs</code></a>.</li>
+the source code at <a href="https://github.com/silicon-editor/Silicon/blob/master/silicon-term/src/commands/typed.rs"><code>silicon-term/src/commands/typed.rs</code></a>.</li>
 <li>Macros: sequences of keys that are executed in order. These keybindings
 start with <code>@</code> and then list any number of keys to be executed. For example
 <code>@miw</code> can be used to select the surrounding word. For now, macro keybindings
@@ -228,7 +228,7 @@ t = ":run-shell-command cargo test"
 <p>Ctrl, Shift and Alt modifiers are encoded respectively with the prefixes <code>C-</code>, <code>S-</code> and <code>A-</code>.</p>
 <p>The <a href="https://en.wikipedia.org/wiki/Super_key_(keyboard_button)">Super key</a> - the Windows/Linux
 key or the Command key on Mac keyboards - is also supported when using a terminal emulator that
-supports the <a href="https://github.com/Rani367/Silicon/wiki/Terminal-Support#enhanced-keyboard-protocol">enhanced keyboard protocol</a>.
+supports the <a href="https://github.com/silicon-editor/Silicon/wiki/Terminal-Support#enhanced-keyboard-protocol">enhanced keyboard protocol</a>.
 The super key is encoded with prefixes <code>Meta-</code>, <code>Cmd-</code> or <code>Win-</code>. These are all synonyms for the
 super modifier - binding a key with a <code>Win-</code> modifier will mean it can be used with the
 Windows/Linux key or the Command key.</p>
